@@ -92,9 +92,39 @@ class Home(ttk.Frame):
     def __init__(self, parent, controller):
         ttk.Frame.__init__(self, parent)
         self.dailpad()
-    
-
-   
+    def dailpad(self):
+        self.grid(column=0, row=0, sticky='nsew')
+        self.label=ttk.Label(self, text="Dail Pad", font=LARGE_FONT)
+        self.label.grid(column=1, row=2)
+        self.tel_lable=ttk.Label(self, text="", font=LARGE_FONT)
+        self.tel_lable.grid(column=3, row=2)
+        self.one = ttk.Button(self, text="1", command=self.one, width=5)
+        self.one.grid(column=1, row=3)
+        self.two = ttk.Button(self, text="2", command=self.two, width=5)
+        self.two.grid(column=2, row=3)
+        self.three = ttk.Button(self, text="3", command=self.three, width=5)
+        self.three.grid(column=3, row=3)
+        self.four = ttk.Button(self, text="4",command=self.four, width=5)
+        self.four.grid(column=1, row=4)
+        self.five = ttk.Button(self, text="5",command=self.five, width=5)
+        self.five.grid(column=2, row=4)
+        self.six = ttk.Button(self, text="6",command=self.six, width=5)
+        self.six.grid(column=3, row=4)
+        self.seven = ttk.Button(self, text="7",command=self.seven, width=5)
+        self.seven.grid(column=1, row=5)
+        self.eight = ttk.Button(self, text="8",command=self.eight, width=5)
+        self.eight.grid(column=2, row=5)
+        self.nine = ttk.Button(self, text="9",command=self.nine, width=5)
+        self.nine.grid(column=3, row=5)
+        self.zero = ttk.Button(self, text="0",command=self.zero, width=5)
+        self.zero.grid(column=2, row=6)
+        self.call_btn = ttk.Button(self, text="call",  width=10)
+        self.call_btn.grid(column=3, row=7)
+        self.end_call=ttk.Button(self, text="End Call",  width=10)
+        self.end_call.grid(column=1, row=7)
+        self.message_btn=ttk.Button(self, text="Msg", width=5)
+        self.message_btn.grid(column=2, row=7)
+      
 
     
         
