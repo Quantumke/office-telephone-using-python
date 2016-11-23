@@ -124,7 +124,71 @@ class Home(ttk.Frame):
         self.end_call.grid(column=1, row=7)
         self.message_btn=ttk.Button(self, text="Msg", width=5)
         self.message_btn.grid(column=2, row=7)
-      
+    global number
+    number=[]
+    def one(self):
+        global number
+        number= number +[1]
+        print (number)
+        self.tel_lable['text']=number
+
+    def two(self):
+        global number
+        number= number + [2]
+        print (number)
+        self.tel_lable['text']=number
+
+    def three(self):
+        global number
+        number= number + [3]
+        print (number)
+        self.tel_lable['text']=number
+
+    def four(self):
+        global number
+        number= number + [4]
+        print (number)
+        self.tel_lable['text']=number
+
+    def five(self):
+        global number
+        number= number + [5]
+        print (number)
+        self.tel_lable['text']=number
+
+    def six(self):
+        global number
+        number= number + [6]
+        print (number)
+        self.tel_lable['text']=number
+
+    def seven(self):
+        global number
+        number= number + [7]
+        print (number)
+        self.tel_lable['text']=number
+
+    def eight(self):
+        global number
+        number= number + [8]
+        print (number)
+        self.tel_lable['text']=number
+
+    def nine(self):
+        global number
+        number= number + [9]
+        print (number)
+        self.tel_lable['text']=number
+
+    def zero(self):
+        global number
+        number= number + [0]
+        print (number)
+        self.tel_lable['text']=number
+
+
+
+   
 
     
         
